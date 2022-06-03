@@ -2,8 +2,23 @@ body {
     background-color: black;
     color: white;
     font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
+.buttons {
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
 input {
-    width: 100px;
+    width: 150px;
+}
+
+#result {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
 }
