@@ -39,4 +39,4 @@ function game() {
     }
 }
 
-game()
+// game()
