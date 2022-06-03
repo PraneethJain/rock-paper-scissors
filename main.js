@@ -5,17 +5,21 @@ function computerPlay() {
 }
 
 
-
 const buttons = document.querySelectorAll('button')
 buttons.forEach(button => {
     button.addEventListener('click', e => {
         playRound(e.target.id, computerPlay());
     })
 })
-
+const player = document.querySelector("#player")
+const computer = document.querySelector("#computer")
 
 let computerScore = 0
 let playerScore = 0
+
+player.textContent = playerScore.toString()
+computer.textContent = computerScore.toString()
+
 function playRound(playerSelection, computerSelection) {
     playerSelection = playerSelection.toLowerCase()
     if (playerSelection===computerSelection) {
@@ -25,6 +29,8 @@ function playRound(playerSelection, computerSelection) {
     } else {
         playerScore++;
     }
-    console.log(`${playerScore} ${computerScore}`);
     
+    player.textContent = playerScore.toString()
+    computer.textContent = computerScore.toString();
+
 }
