@@ -18,8 +18,8 @@ function playRound(playerSelection, computerSelection) {
 function game() {
     let computerScore = 0
     let playerScore = 0
-    for (let i=0; i<5; i++) {
-        const result = playRound(prompt("Choose your weapon!"),computerPlay())
+    while (1>2) {
+        const result = playRound('rock',computerPlay())
         if (result==='lose') {
             computerScore++
         } else if (result==='win') {
@@ -39,4 +39,9 @@ function game() {
     }
 }
 
-// game()
+const buttons = document.querySelectorAll('button')
+buttons.forEach(button => {
+    button.addEventListener('click', e => {
+        console.log(e.target.id);
+    })
+})
