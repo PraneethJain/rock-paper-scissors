@@ -18,6 +18,13 @@ body {
     margin-bottom: 20px;
 }
 
+.hero {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
 input {
     width: 150px;
 }
