@@ -5,7 +5,7 @@ function computerPlay() {
 }
 
 
-const buttons = document.querySelectorAll('button')
+const buttons = document.querySelectorAll('input')
 buttons.forEach(button => {
     button.addEventListener('click', e => {
         playRound(e.target.id, computerPlay());
@@ -29,7 +29,7 @@ function playRound(playerSelection, computerSelection) {
     } else {
         playerScore++;
     }
-    
+
     player.textContent = playerScore.toString()
     computer.textContent = computerScore.toString();
 

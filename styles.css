@@ -4,8 +4,6 @@ body {
     font-family: sans-serif;
 }
 
-button {
-    padding: 5px;
-    background-color: aliceblue;
-    border-radius: 5px;
+input {
+    width: 100px;
 }
