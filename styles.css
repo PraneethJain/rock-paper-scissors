@@ -4,6 +4,7 @@ body {
     font-family: sans-serif;
     display: flex;
     flex-direction: column;
+    margin: 0px;
 }
 
 .buttons {
@@ -13,6 +14,7 @@ body {
 }
 
 .heading {
+    margin-top: 30px;
     text-align: center;
     font-size: 80px;
     margin-bottom: 20px;
@@ -22,16 +24,25 @@ body {
     text-align: center;
     font-size: 60px;
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 input {
-    width: 150px;
+    width: 170px;
 }
 
 #result {
     display: flex;
     justify-content: space-evenly;
     margin-top: 100px;
+    margin-bottom: 80px;
     font-size: 70px;
+}
+
+.footer {
+    margin: 0px;
+    border: 0px;
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(34, 34, 34);
 }
