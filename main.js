@@ -4,10 +4,12 @@ function computerPlay() {
     return moves[Math.floor(Math.random() * moves.length)]
 }
 
+const clickSound = new Audio("./sounds/click.wav")
 const buttons = document.querySelectorAll('input')
 buttons.forEach(button => {
     button.addEventListener('click', e => {
         playRound(e.target.id, computerPlay());
+        clickSound.play()
     })
 })
 const player = document.querySelector("#player")
